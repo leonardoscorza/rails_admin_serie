@@ -6,7 +6,7 @@ O Blog **[One Bit Code](http://onebitcode.com)** é destinado a criar tutoriais 
 
 O One Bit Code tem como foco o framework **Ruby On Rails**, mas também temos conteúdo sobre **Angular 2**, **Ionic 2**, **React** e outros frameworks legais **\o/**.
 
-Sáiba mais sobre o Blog **[clicando aqui](http://onebitcode.com)**!
+Saiba mais sobre o Blog **[clicando aqui](http://onebitcode.com)**!
 
 ----------
 
