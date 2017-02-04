@@ -1,24 +1,23 @@
-# README
+Tutorial **[One Bit Code](http://onebitcode.com)**!
+===================
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+O Blog **[One Bit Code](http://onebitcode.com)** é destinado a criar tutoriais e guias para disseminar o conhecimento sobre Programação em Português no Brasil.
 
-* Ruby version
+O One Bit Code tem como foco o framework **Ruby On Rails**, mas também temos conteúdo sobre **Angular 2**, **Ionic 2**, **React** e outros frameworks legais **\o/**.
 
-* System dependencies
+Sáiba mais sobre o Blog **[clicando aqui](http://onebitcode.com)**!
 
-* Configuration
+----------
 
-* Database creation
 
-* Database initialization
+Criando um sistema Administrativo com Rails Admin
+-------------
 
-* How to run the test suite
+Neste Screencast, dividido em 5 partes, nós vamos criar um sistema administrativo completo usando Rails Admin, neste exemplo vamos criar uma plataforma para que uma empresa possa gerenciar as vendas do seus representantes comerciais com dois tipos de usuário: gerente e vendedor. O vendedor poderá entrar com novas vendas, clientes e ver as suas comissões, o gerente poderá criar produtos, descontos e outros usuários.
 
-* Services (job queues, cache servers, search engines, etc.)
+Também vamos aprender a implementar uma série de features úteis e comuns à maioria dos APPs como autenticação usando Devise, autorização usando CanCanCan, filtro de registros baseado em quem é o dono deles, upload de fotos, customização da aparência e exportação de dados para PDF usando gráficos.
 
-* Deployment instructions
+Este é o primeiro tutorial do OneBitCode dividido em vários episódios em vídeos para aumentar o detalhamento e simplificar a explicação, então se você gostar desse formato deixa um feedback ainda em baixo para eu saber e produzir mais conteúdo como este.
 
-* ...
+Visite o tutorial **[clicando aqui!](http://onebitcode.com/criando-um-sistema-administrativo-completo-com-rails-admin-parte-1)**
