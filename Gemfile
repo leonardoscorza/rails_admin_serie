@@ -24,6 +24,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'rails_admin'
 gem 'devise'
 gem 'cancancan'
+gem 'carrierwave'
+gem 'rails_admin_rollincode', '~> 1.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
