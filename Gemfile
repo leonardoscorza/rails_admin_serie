@@ -26,6 +26,8 @@ gem 'devise'
 gem 'cancancan'
 gem 'carrierwave'
 
+gem 'rails_admin_rollincode', :git => 'git@github.com:leonardoscorza/rollincode_custom.git'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
