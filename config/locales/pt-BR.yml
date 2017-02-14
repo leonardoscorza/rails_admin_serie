@@ -1,4 +1,9 @@
 pt-BR:
+  datetime:
+    distance_in_words:
+      x_days:
+        one: "1 dias"
+        other: "%{count} dias"
   activerecord:
     models:
       client:
@@ -42,6 +47,7 @@ pt-BR:
     table_headers:
       model_name: "Nome do modelo"
       last_used: "Última vez usado em"
+      last_created: "Última vez criado em"
       records: "Registros"
       username: "Usuário"
       changes: "Alterações"
