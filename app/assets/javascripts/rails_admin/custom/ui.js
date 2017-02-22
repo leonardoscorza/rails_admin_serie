@@ -1,5 +1,3 @@
-# app/assets/javascripts/rails_admin/custom/ui.js
-
 $(document).on('ready pjax:success', function() {
   handleActiveBase();
   function handleActiveBase() {

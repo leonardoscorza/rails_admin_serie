@@ -117,6 +117,33 @@ module RailsAdmin
               end
 
 
+              if @object.sales.count > 0
+                # Cria o objeto Gruff
+                g = Gruff::Pie.new 900
+                g.theme = Gruff::Themes::PASTEL
+
+                # Aqui ele formata nossos dados
+                sales_values = {}
+                @object.sales.each do |sale|
+                  calc = 0
+                  sale.product_quantities.each {|p| calc += p.product.price * p.quantity}
+                  sales_values[sale.client.name] = (sales_values[sale.client.name])? sales_values[sale.client.name] + calc : calc
+                end
+
+                sales_values.each {|key, value| g.data(key, value)}
+
+                # Gera a imagem no diretório público (você pode escolher onde gerar)
+                g.write('public/graph.jpg')
+
+                pdf.start_new_page
+
+                pdf.text "Gráfico de Vendas", :size => 20, :style => :bold, :align => :center
+
+                # Incluir o gráfico numero 2
+                pdf.image "public/graph.jpg", :scale => 0.50
+              end
+
+
               # Muda de font para Helvetica
               pdf.font "Helvetica"
               # Inclui um texto com um link clicável (usando a tag link) no bottom da folha do lado esquerdo e coloca uma cor especifica nessa parte (usando a tag color)
@@ -131,6 +158,7 @@ module RailsAdmin
               send_data f.read.force_encoding('BINARY'), :filename => 'pdf', :type => "application/pdf", :disposition => "attachment"
             end
             File.delete("public/#{ramdom_file_name}.pdf")
+            File.delete("public/graph.jpg") if @object.sales.count > 0
           end
         end
 
