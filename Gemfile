@@ -23,7 +23,7 @@ gem 'coffee-rails', '~> 4.2'
 
 gem 'rails_admin'
 gem 'devise'
-gem 'cancancan'
+gem 'cancancan', '~> 1.15.0'
 gem 'carrierwave'
 
 # Gem para gerar os pdfs
